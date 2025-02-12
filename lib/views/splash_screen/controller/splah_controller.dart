@@ -1,0 +1,5 @@
+
+
+class SplahController extends GetxController {
+  
+}
