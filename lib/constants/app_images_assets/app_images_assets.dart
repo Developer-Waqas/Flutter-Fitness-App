@@ -1,4 +1,4 @@
-class APpImagesAssets {
+class AppImagesAssets {
   static const String imageBasePath = 'assets/images/';
 
   static const String splashImage = '${imageBasePath}splash_img.png';
@@ -8,4 +8,7 @@ class APpImagesAssets {
   static const String onboardingImage1 = '${imageBasePath}onboarding1_img.png';
   static const String onboardingImage2 = '${imageBasePath}onboarding2_img.png';
 
+  /// Network Image Assets
+  // static const String onboarindingImage1 =
+  //     'https://images.pexels.com/photos/30564857/pexels-photo-30564857/free-photo-of-muscular-man-lifting-weights-in-gym.jpeg?auto=compress&cs=tinysrgb&w=600';
 }
