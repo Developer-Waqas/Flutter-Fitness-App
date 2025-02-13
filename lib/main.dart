@@ -1,5 +1,3 @@
-import 'package:code_alpha_fitness_app/constants/app_colors/app_colors.dart';
-import 'package:code_alpha_fitness_app/views/splash_screen/splash_screen.dart';
 
 import 'constants/app_linker/app_linker.dart';
 
@@ -13,13 +11,15 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       title: 'Fitness App',
+      initialRoute: AppRoutes.splash,
+      getPages: GenerateRoutes.getRoute(),
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: AppColors.primary),
         useMaterial3: true,
       ),
-      home: const SplashScreen(),
     );
   }
 }
