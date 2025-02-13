@@ -7,6 +7,7 @@ class AppImagesAssets {
   static const String ellipse2Image = '${imageBasePath}Ellipse2_img.png';
   static const String onboardingImage1 = '${imageBasePath}onboarding1_img.png';
   static const String onboardingImage2 = '${imageBasePath}onboarding2_img.png';
+  static const String onboardingImage3 = '${imageBasePath}onboarding3_img.png';
 
   /// Network Image Assets
   // static const String onboarindingImage1 =
