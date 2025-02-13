@@ -39,7 +39,7 @@ class WelcomeScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  'PRO',
+                  AppStringAssets.welcomeTitle1,
                   style: TextStyle(
                     decoration: TextDecoration.none,
                     fontFamily: 'BebasNeue',
@@ -52,57 +52,26 @@ class WelcomeScreen extends StatelessWidget {
                   width: 8,
                 ),
                 Text(
-                  'FITNESS',
-                  style: TextStyle(
-                    decoration: TextDecoration.none,
-                    fontFamily: 'BebasNeue',
-                    fontWeight: FontWeight.w400,
-                    fontSize: 48,
-                    color: AppColors.primary,
-                  ),
+                  AppStringAssets.welcomeTitle2,
+                  style: AppStyle.primaryStyle1,
                 ),
               ],
             ),
             Text(
-              'We train your body to be\ngreat and fit.',
+              AppStringAssets.welcomeSubTitle1,
               textAlign: TextAlign.center,
-              style: TextStyle(
-                decoration: TextDecoration.none,
-                fontFamily: 'DMSans',
-                fontSize: 16,
-                fontWeight: FontWeight.w400,
-                color: AppColors.blackColor,
-              ),
+              style: AppStyle.primaryStyle2,
             ),
             SizedBox(
               height: 30,
             ),
-            InkWell(
-              onTap: () {
-                print('Button Clicked!');
-              },
-              splashColor: AppColors.greyColor,
-              highlightColor: AppColors.greyColor,
-              child: Container(
-                height: 56,
-                width: 180,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(5),
-                  color: AppColors.blackColor,
-                ),
-                child: Center(
-                  child: Text(
-                    'LET\'S START',
-                    style: TextStyle(
-                      decoration: TextDecoration.none,
-                      fontFamily: 'BebasNeue',
-                      fontWeight: FontWeight.w400,
-                      fontSize: 20,
-                      color: AppColors.whiteColor,
-                    ),
-                  ),
-                ),
-              ),
+            CustomButton(
+              buttonTitle: AppStringAssets.welcomeBtnText,
+              onTap: () {},
+              buttonColor: AppColors.blackColor,
+              buttonHeight: 56,
+              buttonWidth: 180,
+              textStyle: AppStyle.buttonStyle1,
             ),
           ],
         ),
