@@ -22,8 +22,23 @@ class SplashScreen extends StatelessWidget {
           ],
         ),
       ),
-      child: Center(
-        child: Image.asset(AppImagesAssets.splashImage,height: 255,width: 229,),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Center(
+            child: Image.asset(
+              AppImagesAssets.splashImage,
+              height: 255,
+              width: 229,
+            ),
+          ),
+          SizedBox(height: 20,),
+          Text(
+            'FITNESS APP',
+            style: AppStyle.primaryStyle2,
+          ),
+        ],
       ),
     );
   }

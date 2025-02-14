@@ -1,7 +1,10 @@
+import 'package:code_alpha_fitness_app/views/welcome_screen/controller/welcome_controller.dart';
+
 import '../../constants/app_linker/app_linker.dart';
 
 class WelcomeScreen extends StatelessWidget {
-  const WelcomeScreen({super.key});
+  WelcomeScreen({super.key});
+  final WelcomeController welcomeController = Get.put(WelcomeController());
 
   @override
   Widget build(BuildContext context) {
@@ -40,13 +43,7 @@ class WelcomeScreen extends StatelessWidget {
               children: [
                 Text(
                   AppStringAssets.welcomeTitle1,
-                  style: TextStyle(
-                    decoration: TextDecoration.none,
-                    fontFamily: 'BebasNeue',
-                    fontWeight: FontWeight.w400,
-                    fontSize: 48,
-                    color: AppColors.blackColor,
-                  ),
+                  style:AppStyle.primaryStyle2
                 ),
                 SizedBox(
                   width: 8,
@@ -60,14 +57,14 @@ class WelcomeScreen extends StatelessWidget {
             Text(
               AppStringAssets.welcomeSubTitle1,
               textAlign: TextAlign.center,
-              style: AppStyle.primaryStyle2,
+              style: AppStyle.secondaryStyle1,
             ),
             SizedBox(
               height: 30,
             ),
             CustomButton(
               buttonTitle: AppStringAssets.welcomeBtnText,
-              onTap: () {},
+              onTap: welcomeController.navigateToOnboaridng,
               buttonColor: AppColors.blackColor,
               buttonHeight: 56,
               buttonWidth: 180,

@@ -8,8 +8,15 @@ class AppStyle {
     fontSize: 48,
     color: AppColors.primary,
   );
-
   static const TextStyle primaryStyle2 = TextStyle(
+    decoration: TextDecoration.none,
+    fontFamily: 'BebasNeue',
+    fontWeight: FontWeight.w400,
+    fontSize: 48,
+    color: AppColors.blackColor,
+  );
+
+  static const TextStyle secondaryStyle1 = TextStyle(
     decoration: TextDecoration.none,
     fontFamily: 'DMSans',
     fontSize: 16,
