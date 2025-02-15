@@ -1,4 +1,5 @@
-import 'package:code_alpha_fitness_app/constants/app_linker/app_linker.dart';
+
+import '../../constants/app_linker/app_linker.dart';
 
 class OnboardingModel {
   RichText? title;

@@ -1,10 +1,13 @@
+
 import '../../constants/app_linker/app_linker.dart';
 
 class OnboardingContent extends StatelessWidget {
   final RichText? title;
   final String imagePath;
 
-  const OnboardingContent({
+  final OnboardingController onboardingController =
+      Get.put(OnboardingController());
+  OnboardingContent({
     super.key,
     this.imagePath = '',
     this.title,
@@ -24,6 +27,7 @@ class OnboardingContent extends StatelessWidget {
           height: 40,
         ),
         title!,
+        
       ],
     );
   }

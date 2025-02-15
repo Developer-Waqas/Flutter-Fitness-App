@@ -1,14 +1,35 @@
-import 'package:code_alpha_fitness_app/models/onboarding_model/onbaording_model.dart';
 
 import '../../../constants/app_linker/app_linker.dart';
 
 class OnboardingController extends GetxController {
-  final PageController pageController = PageController();
+  late PageController pageController = PageController();
+
+  @override
+  void onInit() {
+    super.onInit();
+    pageController = PageController();
+  }
 
   var selectedPageIndex = 0.obs;
+  var isActive = true.obs;
 
   void changePageIndex(int index) {
     selectedPageIndex.value = index;
+  }
+
+  void nextPage() {
+    if (selectedPageIndex.value < 2) {
+      pageController.nextPage(
+          duration: Duration(milliseconds: 300), curve: Curves.easeInOut);
+    } else {
+      pageController.jumpTo(0);
+    }
+  }
+
+  @override
+  void onClose() {
+    pageController.dispose();
+    super.onClose();
   }
 
   List<OnboardingModel> pagesList = [
@@ -43,7 +64,6 @@ class OnboardingController extends GetxController {
     ),
     OnboardingModel(
       AppImagesAssets.onboardingImage3,
-      
       RichText(
         textAlign: TextAlign.center,
         text: TextSpan(
@@ -56,5 +76,5 @@ class OnboardingController extends GetxController {
         ),
       ),
     ),
-  ];
+  ].obs;
 }
