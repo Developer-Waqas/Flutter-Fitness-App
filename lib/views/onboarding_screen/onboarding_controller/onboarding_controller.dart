@@ -43,6 +43,7 @@ class OnboardingController extends GetxController {
     ),
     OnboardingModel(
       AppImagesAssets.onboardingImage3,
+      
       RichText(
         textAlign: TextAlign.center,
         text: TextSpan(
