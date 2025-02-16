@@ -1,4 +1,3 @@
-
 import '../../../constants/app_linker/app_linker.dart';
 
 class OnboardingController extends GetxController {
@@ -12,18 +11,23 @@ class OnboardingController extends GetxController {
 
   var selectedPageIndex = 0.obs;
   var isActive = true.obs;
+  bool get isLastPage => selectedPageIndex.value == 2;
+  void nextPage() {
+    if (!isLastPage) {
+      pageController.nextPage(
+          duration: Duration(milliseconds: 300), curve: Curves.easeInOut);
+          
+    } else {
+      goToLoginScreen();
+    }
+  }
 
   void changePageIndex(int index) {
     selectedPageIndex.value = index;
   }
 
-  void nextPage() {
-    if (selectedPageIndex.value < 2) {
-      pageController.nextPage(
-          duration: Duration(milliseconds: 300), curve: Curves.easeInOut);
-    } else {
-      pageController.jumpTo(0);
-    }
+  void goToLoginScreen() {
+    Get.offNamed(AppRoutes.login);
   }
 
   @override

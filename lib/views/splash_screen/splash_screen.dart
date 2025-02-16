@@ -35,7 +35,7 @@ class SplashScreen extends StatelessWidget {
           ),
           SizedBox(height: 20,),
           Text(
-            'FITNESS APP',
+            AppStringAssets.appName,
             style: AppStyle.primaryStyle2,
           ),
         ],

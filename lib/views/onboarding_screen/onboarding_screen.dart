@@ -1,48 +1,50 @@
-
 import '../../constants/app_linker/app_linker.dart';
 
 class OnboardingScreen extends StatelessWidget {
   final OnboardingController onboardingController =
       Get.put(OnboardingController());
+  final PageController pageController = Get.put(PageController());
   OnboardingScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: double.infinity,
-      decoration: BoxDecoration(
-        gradient: LinearGradient(
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-          colors: [
-            AppColors.secondary,
-            AppColors.whiteColor,
-            AppColors.whiteColor,
-            AppColors.whiteColor,
-            AppColors.tertiary,
-          ],
-        ),
-      ),
-      child: Column(
-        children: [
-          Expanded(
-            child: PageView.builder(
-                onPageChanged: (index) {
-                  onboardingController.changePageIndex(index);
-                },
-                itemCount: onboardingController.pagesList.length,
-                itemBuilder: (context, index) {
-                  return OnboardingContent(
-                    imagePath: onboardingController.pagesList[index].imagePath!,
-                    title: onboardingController.pagesList[index].title,
-                  );
-                }),
+    return Scaffold(
+      body: Container(
+        width: double.infinity,
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+            colors: [
+              AppColors.secondary,
+              AppColors.whiteColor,
+              AppColors.whiteColor,
+              AppColors.whiteColor,
+              AppColors.tertiary,
+            ],
           ),
-          Obx(
-            () {
-              return Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Row(
+        ),
+        child: Column(
+          children: [
+            Expanded(
+              child: PageView.builder(
+                controller: onboardingController.pageController,
+                  onPageChanged: onboardingController.changePageIndex,
+                  itemCount: onboardingController.pagesList.length,
+                  itemBuilder: (context, index) {
+                    return OnboardingContent(
+                      imagePath:
+                          onboardingController.pagesList[index].imagePath!,
+                      title: onboardingController.pagesList[index].title,
+                    );
+                  }),
+            ),
+            SizedBox(
+              height: 30,
+            ),
+            Obx(
+              () {
+                return Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     ...List.generate(
@@ -67,11 +69,36 @@ class OnboardingScreen extends StatelessWidget {
                       ),
                     ),
                   ],
-                ),
-              );
-            },
-          ),
-        ],
+                );
+              },
+            ),
+            SizedBox(
+              height: 50,
+            ),
+            Obx(
+              () => onboardingController.selectedPageIndex.value == 2
+                  ? CustomButton(
+                      buttonTitle: AppStringAssets.start,
+                      onTap: onboardingController.goToLoginScreen,
+                      buttonColor: AppColors.blackColor,
+                      buttonHeight: 56,
+                      buttonWidth: 180,
+                      textStyle: AppStyle.buttonStyle1,
+                    )
+                  : CustomButton(
+                      buttonTitle: AppStringAssets.next,
+                      onTap: onboardingController.nextPage,
+                      buttonColor: AppColors.blackColor,
+                      buttonHeight: 56,
+                      buttonWidth: 180,
+                      textStyle: AppStyle.buttonStyle1,
+                    ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+          ],
+        ),
       ),
     );
   }
