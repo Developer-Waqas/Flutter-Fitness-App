@@ -46,6 +46,7 @@ class AppStyle {
     color: AppColors.whiteColor,
   );
 
+  // Medium
   static const TextStyle tertaryStyle1 = TextStyle(
     decoration: TextDecoration.none,
     fontFamily: 'Montserrat',
@@ -54,4 +55,12 @@ class AppStyle {
     color: AppColors.greyColor,
   );
 
+  // SemiBold
+  static const TextStyle tertaryStyle2 = TextStyle(
+    decoration: TextDecoration.none,
+    fontFamily: 'Montserrat',
+    fontWeight: FontWeight.w600,
+    fontSize: 14,
+    color: AppColors.primary2,
+  );
 }

@@ -1,3 +1,7 @@
+import 'package:code_alpha_fitness_app/constants/app_icon_assets/app_icon_assets.dart';
+import 'package:code_alpha_fitness_app/widgets/custom_button/custom_icon_button.dart';
+import 'package:code_alpha_fitness_app/widgets/custom_text_form_field/custom_text_form_field.dart';
+
 import '../../constants/app_linker/app_linker.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -6,16 +10,153 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: SingleChildScrollView(
-            child: Column(
+      backgroundColor: AppColors.whiteColor,
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              SizedBox(
+                height: 60,
+              ),
+              Text(
+                AppStringAssets.loginWelcomeText,
+                style: AppStyle.primaryStyle3,
+              ),
+              Text(
+                AppStringAssets.loginSubTitle,
+                style: AppStyle.secondaryStyle2,
+              ),
+              SizedBox(
+                height: 40,
+              ),
+
+              // Email TextFormField
+              Text(AppStringAssets.emailText, style: AppStyle.secondaryStyle1),
+              SizedBox(height: 3),
+              CustomTextFormField(
+                hintText: AppStringAssets.emailHintText,
+                suffixIcon: Icon(Icons.done),
+                enabledBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10),
+                  borderSide: BorderSide(
+                    color: Color(0xff696969),
+                  ),
+                ),
+                focusedBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10),
+                  borderSide: BorderSide(
+                    color: Color(0xff696969),
+                  ),
+                ),
+                borderEnabled: true,
+              ),
+              SizedBox(height: 20),
+
+              // Password TextFormField
+              Text(AppStringAssets.passwordText,
+                  style: AppStyle.secondaryStyle1),
+              SizedBox(height: 3),
+              CustomTextFormField(
+                hintText: AppStringAssets.passwordHintText,
+                suffixIcon: Icon(Icons.visibility),
+                enabledBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10),
+                  borderSide: BorderSide(
+                    color: Color(0xff696969),
+                  ),
+                ),
+                focusedBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10),
+                  borderSide: BorderSide(
+                    color: Color(0xff696969),
+                  ),
+                ),
+                borderEnabled: true,
+              ),
+              SizedBox(height: 5),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.end,
                 children: [
-                    Text(
-                        'Welcome to Pro Fitness!',
-                        
-                    ),
+                  CustomButton(
+                      buttonTitle: AppStringAssets.forgotPasswordButton,
+                      onTap: () {}),
                 ],
-            ),
+              ),
+              SizedBox(
+                height: 50,
+              ),
+              CustomButton(
+                buttonTitle: AppStringAssets.loginButton,
+                textStyle: AppStyle.buttonStyle1,
+                onTap: () {},
+                buttonColor: AppColors.primary,
+                buttonHeight: 56,
+                buttonWidth: MediaQuery.of(context).size.width,
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Center(
+                child: Text(
+                  AppStringAssets.orLoginWith,
+                  style: AppStyle.tertaryStyle1,
+                ),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              CustomIconButton(
+                buttonTitle: AppStringAssets.connectWithGoogleButtonText,
+                textStyle: AppStyle.tertaryStyle2,
+                onTap: () {},
+                image: AppIconAssets.googleIcon,
+                imageHeight: 24,
+                imageWidth: 24,
+                height: 56,
+                width: MediaQuery.of(context).size.width,
+                buttonColor: AppColors.greyColor.withOpacity(0.3),
+              ),
+              SizedBox(height: 20),
+              CustomIconButton(
+                buttonTitle: AppStringAssets.connectWithFacebookButtonText,
+                textStyle: AppStyle.tertaryStyle2
+                    .copyWith(color: AppColors.whiteColor),
+                onTap: () {},
+                image: AppIconAssets.facebookIcon,
+                imageHeight: 24,
+                imageWidth: 24,
+                height: 56,
+                width: MediaQuery.of(context).size.width,
+                buttonColor: AppColors.fbColor,
+              ),
+              SizedBox(
+                height: 30,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    AppStringAssets.dontAccountText,
+                    style: AppStyle.tertaryStyle2
+                        .copyWith(color: AppColors.blackColor),
+                  ),
+                  CustomButton(
+                    buttonTitle: AppStringAssets.registorButton,
+                    onTap: () {},
+                    textStyle: AppStyle.tertaryStyle2.copyWith(
+                      color: AppColors.blackColor,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ],
+              ),
+            ],
+          ),
         ),
+      ),
     );
   }
 }
