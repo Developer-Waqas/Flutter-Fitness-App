@@ -1,3 +1,5 @@
+// ignore_for_file: must_be_immutable
+
 import '../../constants/app_linker/app_linker.dart';
 
 class CustomTextFormField extends StatelessWidget {

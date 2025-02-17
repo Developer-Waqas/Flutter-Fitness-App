@@ -1,5 +1,3 @@
-import 'package:code_alpha_fitness_app/views/welcome_screen/controller/welcome_controller.dart';
-
 import '../../constants/app_linker/app_linker.dart';
 
 class WelcomeScreen extends StatelessWidget {

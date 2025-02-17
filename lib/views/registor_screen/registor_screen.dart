@@ -1,8 +1,8 @@
 
 import '../../constants/app_linker/app_linker.dart';
 
-class LoginScreen extends StatelessWidget {
-  const LoginScreen({super.key});
+class RegisterScreen extends StatelessWidget {
+  const RegisterScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -16,25 +16,25 @@ class LoginScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               SizedBox(
-                height: 60,
+                height: 20,
               ),
               Text(
-                AppStringAssets.loginWelcomeText,
+                AppStringAssets.createAccountTitle,
                 style: AppStyle.primaryStyle3,
               ),
               Text(
-                AppStringAssets.loginSubTitle,
+                AppStringAssets.registerSubTitle,
                 style: AppStyle.secondaryStyle2,
               ),
               SizedBox(
-                height: 40,
+                height: 20,
               ),
 
-              // Email TextFormField
-              Text(AppStringAssets.emailText, style: AppStyle.secondaryStyle1),
-              SizedBox(height: 3),
+              // Full Name TextFormField
+              Text(AppStringAssets.fullNameText,
+                  style: AppStyle.secondaryStyle1),
               CustomTextFormField(
-                hintText: AppStringAssets.emailHintText,
+                hintText: AppStringAssets.fullNameHintText,
                 suffixIcon: Icon(Icons.done),
                 enabledBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(10),
@@ -50,8 +50,53 @@ class LoginScreen extends StatelessWidget {
                 ),
                 borderEnabled: true,
               ),
-              SizedBox(height: 20),
+              SizedBox(height: 10),
 
+              // Phone TextFormField
+              Text(AppStringAssets.phoneText, style: AppStyle.secondaryStyle1),
+              SizedBox(height: 3),
+              CustomTextFormField(
+                hintText: AppStringAssets.phoneHintText,
+                enabledBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10),
+                  borderSide: BorderSide(
+                    color: Color(0xff696969),
+                  ),
+                ),
+                focusedBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10),
+                  borderSide: BorderSide(
+                    color: Color(0xff696969),
+                  ),
+                ),
+                borderEnabled: true,
+              ),
+
+              SizedBox(
+                height: 10,
+              ),
+              // Email TextFormField
+              Text(AppStringAssets.emailText, style: AppStyle.secondaryStyle1),
+              SizedBox(height: 3),
+              CustomTextFormField(
+                hintText: AppStringAssets.emailHintText,
+                enabledBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10),
+                  borderSide: BorderSide(
+                    color: Color(0xff696969),
+                  ),
+                ),
+                focusedBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10),
+                  borderSide: BorderSide(
+                    color: Color(0xff696969),
+                  ),
+                ),
+                borderEnabled: true,
+              ),
+              SizedBox(
+                height: 10,
+              ),
               // Password TextFormField
               Text(AppStringAssets.passwordText,
                   style: AppStyle.secondaryStyle1),
@@ -74,19 +119,11 @@ class LoginScreen extends StatelessWidget {
                 borderEnabled: true,
               ),
               SizedBox(height: 5),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  CustomButton(
-                      buttonTitle: AppStringAssets.forgotPasswordButton,
-                      onTap: () {}),
-                ],
-              ),
               SizedBox(
-                height: 50,
+                height: 30,
               ),
               CustomButton(
-                buttonTitle: AppStringAssets.loginButton,
+                buttonTitle: AppStringAssets.creatAccountButton,
                 textStyle: AppStyle.buttonStyle1,
                 onTap: () {},
                 buttonColor: AppColors.primary,
@@ -98,7 +135,7 @@ class LoginScreen extends StatelessWidget {
               ),
               Center(
                 child: Text(
-                  AppStringAssets.orLoginWith,
+                  AppStringAssets.orRegisterWith,
                   style: AppStyle.tertaryStyle1,
                 ),
               ),
@@ -130,22 +167,20 @@ class LoginScreen extends StatelessWidget {
                 buttonColor: AppColors.fbColor,
               ),
               SizedBox(
-                height: 30,
+                height: 15,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    AppStringAssets.dontAccountText,
+                    AppStringAssets.alreadyAccountText,
                     style: AppStyle.tertaryStyle2
                         .copyWith(color: AppColors.blackColor),
                   ),
                   CustomButton(
-                    buttonTitle: AppStringAssets.registorButton,
+                    buttonTitle: AppStringAssets.loginnButton,
                     onTap: () {
-                      Get.toNamed(
-                        AppRoutes.register,
-                      );
+                      Get.back();
                     },
                     textStyle: AppStyle.tertaryStyle2.copyWith(
                       color: AppColors.blackColor,

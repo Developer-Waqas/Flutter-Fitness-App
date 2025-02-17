@@ -11,8 +11,15 @@ export 'package:code_alpha_fitness_app/views/splash_screen/controller/splah_cont
 export 'package:code_alpha_fitness_app/constants/app_string_assets/app_string_assets.dart';
 export 'package:code_alpha_fitness_app/constants/app_style/app_style.dart';
 export 'package:code_alpha_fitness_app/widgets/custom_button/custom_button.dart';
-export 'package:code_alpha_fitness_app/views/onboarding_screen/onboarding_content.dart';
+export 'package:code_alpha_fitness_app/views/onboarding_screen/widgets/onboarding_content.dart';
 export 'package:code_alpha_fitness_app/views/onboarding_screen/onboarding_controller/onboarding_controller.dart';
 export 'package:code_alpha_fitness_app/models/onboarding_model/onbaording_model.dart';
 export 'package:code_alpha_fitness_app/constants/app_linker/app_linker.dart';
+export 'package:code_alpha_fitness_app/constants/app_icon_assets/app_icon_assets.dart';
+export 'package:code_alpha_fitness_app/widgets/custom_button/custom_icon_button.dart';
+export 'package:code_alpha_fitness_app/widgets/custom_text_form_field/custom_text_form_field.dart';
+export 'package:code_alpha_fitness_app/views/login_screen/login_screen.dart';
+export 'package:code_alpha_fitness_app/views/onboarding_screen/onboarding_screen.dart';
+export '../../views/registor_screen/registor_screen.dart';
+export 'package:code_alpha_fitness_app/views/welcome_screen/controller/welcome_controller.dart';
 

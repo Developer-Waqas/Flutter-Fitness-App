@@ -1,32 +1,30 @@
 
-import 'package:code_alpha_fitness_app/views/login_screen/login_screen.dart';
-import 'package:code_alpha_fitness_app/views/onboarding_screen/onboarding_screen.dart';
-
 import '../../constants/app_linker/app_linker.dart';
+
 
 class GenerateRoutes {
   static List<GetPage> getRoute() {
     return [
       GetPage(
-        name: AppRoutes.splash,
-        page: () => SplashScreen(),
-        transition: Transition.fadeIn
-      ),
+          name: AppRoutes.splash,
+          page: () => SplashScreen(),
+          curve: Curves.easeInOut),
       GetPage(
-        name: AppRoutes.welcome,
-        page: () => WelcomeScreen(),
-        transition: Transition.fadeIn
-      ),
+          name: AppRoutes.welcome,
+          page: () => WelcomeScreen(),
+          curve: Curves.easeInOut),
       GetPage(
-        name: AppRoutes.onboarding,
-        page: () => OnboardingScreen(),
-        transition: Transition.fadeIn
-      ),
+          name: AppRoutes.onboarding,
+          page: () => OnboardingScreen(),
+          curve: Curves.easeInOut),
       GetPage(
-        name: AppRoutes.login,
-        page: () => LoginScreen(),
-        transition: Transition.fadeIn
-      ),
+          name: AppRoutes.login,
+          page: () => LoginScreen(),
+          curve: Curves.easeInOut),
+      GetPage(
+          name: AppRoutes.register,
+          page: () => RegisterScreen(),
+          curve: Curves.easeInOut),
     ];
   }
 }

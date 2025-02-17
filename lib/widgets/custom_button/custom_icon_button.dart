@@ -16,7 +16,7 @@ class CustomIconButton extends StatelessWidget {
 
   CustomIconButton({
     super.key,
-    this.borderRadiusCircular = 12,
+    this.borderRadiusCircular = 5,
     this.buttonColor,
     required this.buttonTitle,
     this.fit,
@@ -31,7 +31,7 @@ class CustomIconButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
+    return InkWell(
       onTap: onTap,
       child: Container(
         height: height,
