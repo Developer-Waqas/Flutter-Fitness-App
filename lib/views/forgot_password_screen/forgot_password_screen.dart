@@ -18,14 +18,14 @@ class ForgotPasswordScreen extends StatelessWidget {
                 height: 50,
               ),
               Text(
-                'FORGOT PASSWORD',
+                AppStringAssets.forgotPasswordText,
                 style: AppStyle.primaryStyle3,
               ),
               SizedBox(
                 height: 10,
               ),
               Text(
-                'Please enter your email below to receive\nyour password reset code.',
+                AppStringAssets.forgotSubTitle,
                 style: AppStyle.secondaryStyle2,
               ),
               SizedBox(
@@ -56,9 +56,11 @@ class ForgotPasswordScreen extends StatelessWidget {
                 height: 80,
               ),
               CustomButton(
-                buttonTitle: 'SEND CODE',
+                buttonTitle: AppStringAssets.sendCodeButton,
                 textStyle: AppStyle.buttonStyle1,
-                onTap: () {},
+                onTap: () {
+                  Get.toNamed(AppRoutes.verify);
+                },
                 buttonColor: AppColors.primary,
                 buttonHeight: 56,
                 buttonWidth: MediaQuery.of(context).size.width,

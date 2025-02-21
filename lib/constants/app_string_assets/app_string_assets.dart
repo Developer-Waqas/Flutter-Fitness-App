@@ -1,3 +1,5 @@
+import 'dart:collection';
+
 class AppStringAssets {
   // App Name
   static const String appName = 'FITNESS PRO!';
@@ -19,6 +21,7 @@ class AppStringAssets {
   static const String connectWithFacebookButtonText = 'Connect with Facebook';
   static const String registorButton = 'Registor!';
   static const String loginnButton = 'Login!';
+  static const String sendCodeButton = 'SEND CODE';
 
   //Login Screen String
   static const String loginWelcomeText = 'Welcome to Pro Fitness!';
@@ -42,4 +45,9 @@ class AppStringAssets {
   static const String createAccountTitle = 'CREATE ACCOUNT';
   static const String registerSubTitle =
       'Please enter your credentials to\nproceed';
+
+  // Forgot Password Screen String
+  static const String forgotPasswordText = 'FORGOT PASSWORD';
+  static const String forgotSubTitle =
+      'Please enter your email below to receive\nyour password reset code.';
 }
