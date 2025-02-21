@@ -1,4 +1,3 @@
-
 import '../../constants/app_linker/app_linker.dart';
 
 class RegisterScreen extends StatelessWidget {
@@ -49,6 +48,8 @@ class RegisterScreen extends StatelessWidget {
                   ),
                 ),
                 borderEnabled: true,
+                fillColor: AppColors.greyColor.withOpacity(0.2),
+                filled: true,
               ),
               SizedBox(height: 10),
 
@@ -70,6 +71,8 @@ class RegisterScreen extends StatelessWidget {
                   ),
                 ),
                 borderEnabled: true,
+                fillColor: AppColors.greyColor.withOpacity(0.2),
+                filled: true,
               ),
 
               SizedBox(
@@ -93,6 +96,8 @@ class RegisterScreen extends StatelessWidget {
                   ),
                 ),
                 borderEnabled: true,
+                fillColor: AppColors.greyColor.withOpacity(0.2),
+                filled: true,
               ),
               SizedBox(
                 height: 10,
@@ -117,6 +122,8 @@ class RegisterScreen extends StatelessWidget {
                   ),
                 ),
                 borderEnabled: true,
+                fillColor: AppColors.greyColor.withOpacity(0.2),
+                filled: true,
               ),
               SizedBox(height: 5),
               SizedBox(

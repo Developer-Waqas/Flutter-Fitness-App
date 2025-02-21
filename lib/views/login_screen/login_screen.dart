@@ -1,4 +1,3 @@
-
 import '../../constants/app_linker/app_linker.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -49,7 +48,8 @@ class LoginScreen extends StatelessWidget {
                   ),
                 ),
                 borderEnabled: true,
-              ),
+fillColor: AppColors.greyColor.withOpacity(0.2),
+                filled: true,              ),
               SizedBox(height: 20),
 
               // Password TextFormField
@@ -72,18 +72,23 @@ class LoginScreen extends StatelessWidget {
                   ),
                 ),
                 borderEnabled: true,
+               fillColor: AppColors.greyColor.withOpacity(0.2),
+                filled: true,
               ),
               SizedBox(height: 5),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   CustomButton(
-                      buttonTitle: AppStringAssets.forgotPasswordButton,
-                      onTap: () {}),
+                    buttonTitle: AppStringAssets.forgotPasswordButton,
+                    onTap: () {
+                      Get.toNamed(AppRoutes.forgot);
+                    },
+                  ),
                 ],
               ),
               SizedBox(
-                height: 50,
+                height: 35,
               ),
               CustomButton(
                 buttonTitle: AppStringAssets.loginButton,

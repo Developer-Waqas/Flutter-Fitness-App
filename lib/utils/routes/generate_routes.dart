@@ -1,4 +1,6 @@
 
+import 'package:code_alpha_fitness_app/views/forgot_password_screen/forgot_password_screen.dart';
+
 import '../../constants/app_linker/app_linker.dart';
 
 
@@ -24,6 +26,10 @@ class GenerateRoutes {
       GetPage(
           name: AppRoutes.register,
           page: () => RegisterScreen(),
+          curve: Curves.easeInOut),
+      GetPage(
+          name: AppRoutes.forgot,
+          page: () => ForgotPasswordScreen(),
           curve: Curves.easeInOut),
     ];
   }

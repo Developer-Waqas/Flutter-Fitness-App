@@ -1,4 +1,3 @@
-
 import 'constants/app_linker/app_linker.dart';
 
 void main() {
@@ -13,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       title: 'Fitness App',
-      initialRoute: AppRoutes.login,
+      initialRoute: AppRoutes.splash,
       getPages: GenerateRoutes.getRoute(),
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
