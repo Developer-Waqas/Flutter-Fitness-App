@@ -1,6 +1,3 @@
-import 'package:code_alpha_fitness_app/views/screens/forgot_password_screen/forgot_password_screen.dart';
-import 'package:code_alpha_fitness_app/views/screens/login_screen/login_screen.dart';
-import 'package:code_alpha_fitness_app/views/screens/verify_account_screen/verify_account_screen.dart';
 
 import '../../constants/app_linker/app_linker.dart';
 

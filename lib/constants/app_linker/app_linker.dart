@@ -21,4 +21,11 @@ export 'package:code_alpha_fitness_app/widgets/custom_text_form_field/custom_tex
 export 'package:code_alpha_fitness_app/views/screens/onboarding_screen/onboarding_screen.dart';
 export '../../views/screens/registor_screen/registor_screen.dart';
 export 'package:code_alpha_fitness_app/views/screens/welcome_screen/controller/welcome_controller.dart';
+export 'package:code_alpha_fitness_app/views/screens/forgot_password_screen/forgot_password_screen.dart';
+export 'package:code_alpha_fitness_app/views/screens/login_screen/login_screen.dart';
+export 'package:code_alpha_fitness_app/views/screens/verify_account_screen/verify_account_screen.dart';
+export 'package:pinput/pinput.dart';
+export 'package:code_alpha_fitness_app/views/screens/verify_account_screen/widgets/verify_body_widget.dart';
+export 'package:code_alpha_fitness_app/views/screens/verify_account_screen/widgets/verify_footer_widget.dart';
+export 'package:code_alpha_fitness_app/views/screens/verify_account_screen/widgets/verify_header_widget.dart';
 

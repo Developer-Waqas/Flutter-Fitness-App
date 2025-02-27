@@ -1,4 +1,3 @@
-import 'package:pinput/pinput.dart';
 
 import '../../../../constants/app_linker/app_linker.dart';
 
