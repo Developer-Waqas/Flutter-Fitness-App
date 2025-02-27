@@ -18,7 +18,7 @@ class CustomIconButton extends StatelessWidget {
     super.key,
     this.borderRadiusCircular = 5,
     this.buttonColor,
-    required this.buttonTitle,
+    this.buttonTitle='',
     this.fit,
     this.height,
     required this.image,

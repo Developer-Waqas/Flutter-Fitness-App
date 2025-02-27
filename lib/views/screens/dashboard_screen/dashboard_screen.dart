@@ -7,11 +7,22 @@ class DashboardScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.whiteColor,
-      body: Container(
-        height: 247,
-        width: 375,
-        decoration: BoxDecoration(
-            color: AppColors.primary, borderRadius: BorderRadius.circular(12)),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Container(
+              height: 247,
+              width: MediaQuery.of(context).size.width,
+              decoration: BoxDecoration(
+                color: AppColors.primary,
+                borderRadius: BorderRadius.only(
+                  bottomLeft: Radius.circular(15),
+                  bottomRight: Radius.circular(15),
+                ),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
