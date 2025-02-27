@@ -1,4 +1,6 @@
 
+import 'package:code_alpha_fitness_app/views/screens/dashboard_screen/dashboard_screen.dart';
+
 import '../../constants/app_linker/app_linker.dart';
 
 class GenerateRoutes {
@@ -31,6 +33,10 @@ class GenerateRoutes {
       GetPage(
           name: AppRoutes.verify,
           page: () => VerifyAccountScreen(),
+          curve: Curves.easeInOut),
+      GetPage(
+          name: AppRoutes.dashboard,
+          page: () => DashboardScreen(),
           curve: Curves.easeInOut),
     ];
   }

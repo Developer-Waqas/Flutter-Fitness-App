@@ -6,5 +6,6 @@ class AppRoutes {
   static const String register = '/register';
   static const String forgot = '/forgot';
   static const String verify = '/verify';
+  static const String dashboard = '/dashboard';
   
 }
