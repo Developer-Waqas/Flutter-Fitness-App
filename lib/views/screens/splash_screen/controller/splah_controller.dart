@@ -1,5 +1,5 @@
 
-import '../../../constants/app_linker/app_linker.dart';
+import '../../../../constants/app_linker/app_linker.dart';
 
 class SplashController extends GetxController {
   @override

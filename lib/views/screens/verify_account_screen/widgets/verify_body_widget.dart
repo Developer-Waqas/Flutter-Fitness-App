@@ -1,6 +1,6 @@
 import 'package:pinput/pinput.dart';
 
-import '../../../constants/app_linker/app_linker.dart';
+import '../../../../constants/app_linker/app_linker.dart';
 
 class VerifyBodyWidget extends StatelessWidget {
   const VerifyBodyWidget({super.key});

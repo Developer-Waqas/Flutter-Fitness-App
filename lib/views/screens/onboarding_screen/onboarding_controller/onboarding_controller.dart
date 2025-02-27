@@ -1,4 +1,4 @@
-import '../../../constants/app_linker/app_linker.dart';
+import '../../../../constants/app_linker/app_linker.dart';
 
 class OnboardingController extends GetxController {
   late PageController pageController = PageController();

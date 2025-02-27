@@ -1,4 +1,5 @@
-import '../../constants/app_linker/app_linker.dart';
+
+import 'package:code_alpha_fitness_app/constants/app_linker/app_linker.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});

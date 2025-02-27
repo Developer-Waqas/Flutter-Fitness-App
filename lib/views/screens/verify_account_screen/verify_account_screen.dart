@@ -1,9 +1,8 @@
-import 'package:code_alpha_fitness_app/views/verify_account_screen/widgets/verify_body_widget.dart';
-import 'package:code_alpha_fitness_app/views/verify_account_screen/widgets/verify_footer_widget.dart';
-import 'package:code_alpha_fitness_app/views/verify_account_screen/widgets/verify_header_widget.dart';
-import 'package:pinput/pinput.dart';
+import 'package:code_alpha_fitness_app/views/screens/verify_account_screen/widgets/verify_body_widget.dart';
+import 'package:code_alpha_fitness_app/views/screens/verify_account_screen/widgets/verify_footer_widget.dart';
+import 'package:code_alpha_fitness_app/views/screens/verify_account_screen/widgets/verify_header_widget.dart';
 
-import '../../constants/app_linker/app_linker.dart';
+import '../../../constants/app_linker/app_linker.dart';
 
 class VerifyAccountScreen extends StatelessWidget {
   const VerifyAccountScreen({super.key});
