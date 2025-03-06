@@ -1,4 +1,3 @@
-
 import 'package:code_alpha_fitness_app/constants/app_linker/app_linker.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -49,8 +48,9 @@ class LoginScreen extends StatelessWidget {
                   ),
                 ),
                 borderEnabled: true,
-fillColor: AppColors.greyColor.withOpacity(0.2),
-                filled: true,              ),
+                fillColor: AppColors.greyColor.withOpacity(0.2),
+                filled: true,
+              ),
               SizedBox(height: 20),
 
               // Password TextFormField
@@ -73,7 +73,7 @@ fillColor: AppColors.greyColor.withOpacity(0.2),
                   ),
                 ),
                 borderEnabled: true,
-               fillColor: AppColors.greyColor.withOpacity(0.2),
+                fillColor: AppColors.greyColor.withOpacity(0.2),
                 filled: true,
               ),
               SizedBox(height: 5),
@@ -94,7 +94,9 @@ fillColor: AppColors.greyColor.withOpacity(0.2),
               CustomButton(
                 buttonTitle: AppStringAssets.loginButton,
                 textStyle: AppStyle.buttonStyle1,
-                onTap: () {},
+                onTap: () {
+                  Get.toNamed(AppRoutes.dashboard);
+                },
                 buttonColor: AppColors.primary,
                 buttonHeight: 56,
                 buttonWidth: MediaQuery.of(context).size.width,
