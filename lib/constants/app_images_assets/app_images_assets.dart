@@ -8,5 +8,5 @@ class AppImagesAssets {
   static const String onboardingImage1 = '${imageBasePath}onboarding1_img.png';
   static const String onboardingImage2 = '${imageBasePath}onboarding2_img.png';
   static const String onboardingImage3 = '${imageBasePath}onboarding3_img.png';
-
+  static const String profileImage = '${imageBasePath}profile_img.jpg';
 }
