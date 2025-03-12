@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: 'Fitness App',
+      title: 'Fitness Pro',
       initialRoute: AppRoutes.splash,
       getPages: GenerateRoutes.getRoute(),
       debugShowCheckedModeBanner: false,
