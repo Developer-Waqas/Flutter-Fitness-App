@@ -65,7 +65,7 @@ class DashboardScreen extends StatelessWidget {
                     ),
                   ),
                   Positioned(
-                    top: 105,
+                    top: 115,
                     left: 13,
                     child: Text(
                       'Waqas !',
@@ -73,7 +73,7 @@ class DashboardScreen extends StatelessWidget {
                     ),
                   ),
                   Positioned(
-                    top: 130,
+                    top: 165,
                     left: 13,
                     child: Container(
                       height: 52.14,
