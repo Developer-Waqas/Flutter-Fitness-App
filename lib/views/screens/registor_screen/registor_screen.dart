@@ -151,7 +151,7 @@ class RegisterScreen extends StatelessWidget {
               ),
               CustomIconButton(
                 buttonTitle: AppStringAssets.connectWithGoogleButtonText,
-                textStyle: AppStyle.tertaryStyle2,
+                textStyle: AppStyle.tartaryStyle2,
                 onTap: () {},
                 image: AppIconAssets.googleIcon,
                 imageHeight: 24,
@@ -163,7 +163,7 @@ class RegisterScreen extends StatelessWidget {
               SizedBox(height: 20),
               CustomIconButton(
                 buttonTitle: AppStringAssets.connectWithFacebookButtonText,
-                textStyle: AppStyle.tertaryStyle2
+                textStyle: AppStyle.tartaryStyle2
                     .copyWith(color: AppColors.whiteColor),
                 onTap: () {},
                 image: AppIconAssets.facebookIcon,
@@ -181,7 +181,7 @@ class RegisterScreen extends StatelessWidget {
                 children: [
                   Text(
                     AppStringAssets.alreadyAccountText,
-                    style: AppStyle.tertaryStyle2
+                    style: AppStyle.tartaryStyle2
                         .copyWith(color: AppColors.blackColor),
                   ),
                   CustomButton(
@@ -189,7 +189,7 @@ class RegisterScreen extends StatelessWidget {
                     onTap: () {
                       Get.back();
                     },
-                    textStyle: AppStyle.tertaryStyle2.copyWith(
+                    textStyle: AppStyle.tartaryStyle2.copyWith(
                       color: AppColors.blackColor,
                       fontWeight: FontWeight.bold,
                     ),

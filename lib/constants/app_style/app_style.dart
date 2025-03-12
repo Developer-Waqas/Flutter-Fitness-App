@@ -54,12 +54,26 @@ class AppStyle {
     fontSize: 12,
     color: AppColors.greyColor,
   );
+  static const TextStyle tertaryStyle3 = TextStyle(
+    decoration: TextDecoration.none,
+    fontFamily: 'Montserrat',
+    fontWeight: FontWeight.w500,
+    fontSize: 10,
+    color: AppColors.whiteColor,
+  );
 
   // SemiBold
-  static const TextStyle tertaryStyle2 = TextStyle(
+  static const TextStyle tartaryStyle2 = TextStyle(
     decoration: TextDecoration.none,
     fontFamily: 'Montserrat',
     fontWeight: FontWeight.w600,
+    fontSize: 14,
+    color: AppColors.primary2,
+  );
+  static const TextStyle tartaryStyle4 = TextStyle(
+    decoration: TextDecoration.none,
+    fontFamily: 'Montserrat',
+    fontWeight: FontWeight.w500,
     fontSize: 14,
     color: AppColors.primary2,
   );

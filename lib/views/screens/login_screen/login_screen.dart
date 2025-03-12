@@ -115,7 +115,7 @@ class LoginScreen extends StatelessWidget {
               ),
               CustomIconButton(
                 buttonTitle: AppStringAssets.connectWithGoogleButtonText,
-                textStyle: AppStyle.tertaryStyle2,
+                textStyle: AppStyle.tartaryStyle2,
                 onTap: () {},
                 image: AppIconAssets.googleIcon,
                 imageHeight: 24,
@@ -127,7 +127,7 @@ class LoginScreen extends StatelessWidget {
               SizedBox(height: 20),
               CustomIconButton(
                 buttonTitle: AppStringAssets.connectWithFacebookButtonText,
-                textStyle: AppStyle.tertaryStyle2
+                textStyle: AppStyle.tartaryStyle2
                     .copyWith(color: AppColors.whiteColor),
                 onTap: () {},
                 image: AppIconAssets.facebookIcon,
@@ -145,7 +145,7 @@ class LoginScreen extends StatelessWidget {
                 children: [
                   Text(
                     AppStringAssets.dontAccountText,
-                    style: AppStyle.tertaryStyle2
+                    style: AppStyle.tartaryStyle4
                         .copyWith(color: AppColors.blackColor),
                   ),
                   CustomButton(
@@ -155,7 +155,7 @@ class LoginScreen extends StatelessWidget {
                         AppRoutes.register,
                       );
                     },
-                    textStyle: AppStyle.tertaryStyle2.copyWith(
+                    textStyle: AppStyle.tartaryStyle2.copyWith(
                       color: AppColors.blackColor,
                       fontWeight: FontWeight.bold,
                     ),

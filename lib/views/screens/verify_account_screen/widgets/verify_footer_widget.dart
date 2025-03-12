@@ -10,7 +10,7 @@ class VerifyFooterWidget extends StatelessWidget {
          Center(
                 child: CustomButton(
                   buttonTitle: 'Resend',
-                  textStyle: AppStyle.tertaryStyle2.copyWith(
+                  textStyle: AppStyle.tartaryStyle2.copyWith(
                     decoration: TextDecoration.underline,
                     color: AppColors.blackColor,
                   ),
