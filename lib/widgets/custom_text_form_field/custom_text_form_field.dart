@@ -15,7 +15,7 @@ class CustomTextFormField extends StatelessWidget {
   TextEditingController? controller;
   TextInputType? keyboardType;
   AutovalidateMode? autovalidateMode;
-  String? Function(String?)? onValiaate;
+  String? Function(String?)? onValidate;
   OutlineInputBorder? border;
   OutlineInputBorder? errorBorder;
   OutlineInputBorder? enabledBorder;
@@ -31,7 +31,7 @@ class CustomTextFormField extends StatelessWidget {
     this.hintTextStyle,
     this.labelText,
     this.labeTextStyle,
-    this.onValiaate,
+    this.onValidate,
     this.autovalidateMode,
     this.controller,
     this.keyboardType,
@@ -54,7 +54,7 @@ class CustomTextFormField extends StatelessWidget {
       keyboardType: keyboardType,
       style: textFormFieldStyle,
       autovalidateMode: autovalidateMode,
-      validator: onValiaate,
+      validator: onValidate,
       decoration: InputDecoration(
         hintText: hintText,
         hintStyle: hintTextStyle,
