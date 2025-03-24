@@ -1,4 +1,4 @@
-import 'package:code_alpha_fitness_app/global_variable.dart'; 
+import 'package:code_alpha_fitness_app/global_variable.dart';
 import 'package:code_alpha_fitness_app/models/user_model/user_model.dart';
 import 'package:code_alpha_fitness_app/services/api_response.dart';
 import 'package:flutter/material.dart';
@@ -27,7 +27,7 @@ class AuthController extends GetxController {
       );
 
       http.Response response = await http.post(
-        Uri.parse('$uri/register'),
+        Uri.parse('$baseUrl /api/register'),
         body: user.toJson(),
         headers: <String, String>{
           'Content-Type': 'application/json; charset=UTF-8',

@@ -1,1 +1,1 @@
-String uri = 'https://fitness-app-backend-api-kappa.vercel.app/api/';
+String baseUrl = 'https://fitness-app-backend-api-kappa.vercel.app/';
