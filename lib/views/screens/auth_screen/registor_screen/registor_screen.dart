@@ -25,6 +25,21 @@ class RegisterScreen extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
+                SizedBox(
+                height: 60,
+              ),
+              Text(
+                AppStringAssets.loginWelcomeText,
+                style: AppStyle.primaryStyle3,
+              ),
+              Text(
+                AppStringAssets.loginSubTitle,
+                style: AppStyle.secondaryStyle2,
+              ),
+              SizedBox(
+                height: 40,
+              ),
+
                 SizedBox(height: 20),
 
                 Obx(() {
@@ -80,6 +95,7 @@ class RegisterScreen extends StatelessWidget {
                 CustomTextFormField(
                   controller: passwordController,
                   hintText: AppStringAssets.passwordHintText,
+                 borderEnabled: true,
                   onValidate: (value) {
                     if (value!.isEmpty) {
                       return 'Please enter your password';

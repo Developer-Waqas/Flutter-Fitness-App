@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       title: 'Fitness Pro',
-      initialRoute: AppRoutes.dashboard,
+      initialRoute: AppRoutes.splash,
       getPages: GenerateRoutes.getRoute(),
       debugShowCheckedModeBanner: false,
       theme: ThemeData(

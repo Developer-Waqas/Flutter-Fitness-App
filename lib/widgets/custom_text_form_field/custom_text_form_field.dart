@@ -39,7 +39,7 @@ class CustomTextFormField extends StatelessWidget {
     this.suffixIcon,
     this.border,
     this.errorBorder,
-    this.borderEnabled=false,
+    this.borderEnabled=true,
     this.enabledBorder,
     this.focusedBorder,
     this.fillColor,

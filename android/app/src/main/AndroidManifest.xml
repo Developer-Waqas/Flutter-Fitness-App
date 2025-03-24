@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
-        android:label="code_alpha_fitness_app"
+        android:label="fitness_pro_app"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
